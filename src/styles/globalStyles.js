@@ -1,4 +1,4 @@
-import { createGlobalStyle,styled } from "styled-components";
+import { createGlobalStyle, } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 :root {
@@ -24,6 +24,12 @@ body{
 
 }
 
+.erro{
+  color: var(--color-negative);
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
 
 
 input{

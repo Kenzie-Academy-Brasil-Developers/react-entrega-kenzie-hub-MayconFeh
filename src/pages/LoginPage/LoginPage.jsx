@@ -6,7 +6,7 @@ export const LoginPage = () => {
     return(
       <StyledMainLogin>
         <Logo/>
-        <Form/>
+        <Form />
       </StyledMainLogin>
       
     

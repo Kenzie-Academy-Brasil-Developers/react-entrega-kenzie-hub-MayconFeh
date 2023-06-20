@@ -6,7 +6,7 @@ export const RegisterPage = () => {
     return(
         <StyledMainRegister>
           <LogoRegister/>
-          <Form/>
+          <Form />
         </StyledMainRegister>
     )
 }

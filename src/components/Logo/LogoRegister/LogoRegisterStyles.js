@@ -12,10 +12,15 @@ gap: 225px;
   gap: 150px;
 }
 
->button{
+
+
+a{
+  width: fit-content;
+  >button{
   width: 79.54px;
 height: 31.95px;
 background: var(--color-grey-3);
 border-radius: 4px;
+}
 }
 `

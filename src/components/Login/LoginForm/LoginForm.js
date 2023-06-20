@@ -36,10 +36,15 @@ export const StyledForm = styled.form`
       width: 291px;
     }
 
-    background: var(--color-color-primary);
-
-    border: 1.2182px solid var(--color-color-primary);
+    background: var(--color-color-primary-disable);
+    border: 1.2182px solid var(--color-color-primary-disable);
     border-radius: 4.06066px;
+
+    &:hover{
+      background: var(--color-color-primary);
+      border: 1.2182px solid var(--color-color-primary);
+
+    }
 
   }
   .containerRegister{
@@ -52,21 +57,28 @@ export const StyledForm = styled.form`
     label{
       color: var(--color-grey-1);
     }
-    button{
+    
+    .buttonRegs{
       transition: 0.6s;
     width: 350px;
     height: 48px;
 
+    background: var(--color-grey-2);
+    border: 1.2182px solid var(--color-grey-2);
+    border-radius: 4.06066px;
+    &:hover{
+      background: var(--color-grey-1);
+      border: 1.2182px solid var(--color-grey-1);
+      
+      
+    }
     @media (max-width: 48rem) {
       width: 291px;
     }
-
-    background: var(--color-grey-1);
-
-    border: 1.2182px solid var(--color-grey-1);
-    border-radius: 4.06066px;
-
+  
     }
   }
-  
+  a{
+    width: fit-content;
+  }
 `

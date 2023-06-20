@@ -5,10 +5,13 @@ export const StyledMainRegister = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 0px;
   height: 100vh;
-  gap: 20px;
+  gap: 5px;
   
+  @media (max-width: 768px) {
+   padding: 40px;
+  }
   transition: 0.6s;
   
   

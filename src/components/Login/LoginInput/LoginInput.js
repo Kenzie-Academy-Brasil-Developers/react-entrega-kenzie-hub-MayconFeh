@@ -7,6 +7,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 gap: 8.14px;
+padding-left:20px;
 
 width: 360px;
 height: 48px;
