@@ -45,7 +45,7 @@ export const StyledUserFeed = styled.main`
   }
   >li{
     height: 49px;
-    width: 100%;
+    width: 98%;
     background: var(--color-grey-4);
     display: flex;
     align-items: center;
