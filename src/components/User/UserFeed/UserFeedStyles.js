@@ -52,6 +52,7 @@ export const StyledUserFeed = styled.main`
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 4px ;
+    overflow-y: auto;
     &:hover{
       background: var(--color-grey-2);
     }
