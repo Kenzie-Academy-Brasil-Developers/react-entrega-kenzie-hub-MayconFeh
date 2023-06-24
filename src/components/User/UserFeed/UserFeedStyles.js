@@ -36,6 +36,7 @@ export const StyledUserFeed = styled.main`
   width: 95.5%;
   height: 26rem;
   transition: 0.6s;
+  overflow-y: auto;
   @media (max-width: 768px) {
     width: 94%;
   }
@@ -52,7 +53,6 @@ export const StyledUserFeed = styled.main`
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 4px ;
-    overflow-y: auto;
     &:hover{
       background: var(--color-grey-2);
     }
