@@ -19,7 +19,7 @@ body{
   min-height: 100vh;
   max-width: 100vw;
   color: var(--color-grey-0);
-  
+  position: relative;
   
 
 }
@@ -55,6 +55,7 @@ select:focus,
 select:active,
 select:checked {
   color: var(--color-grey-0);
+  border: 1px solid var(--color-grey-0);
 }
 
 button{
@@ -67,4 +68,51 @@ button{
   line-height: 21px;
   outline: none;
 }
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading{
+  width: 60px;
+  height: 60px;
+  border-radius:50%;
+  animation: spin 1.2s linear infinite;
+ 
+  &::before,
+  &::after{
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  }
+  &::before{
+    width: 100%;
+    height: 100%;
+   background-image: 
+   linear-gradient(0deg,
+    #f0c 0%,
+    #80f 100%
+    );
+  }
+    &::after{
+      width: 85%;
+    height: 85%;
+    background:var(--color-grey-4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+  }
+
+  .loadingContainer{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width : 100% ;
+  height: 100%;
+  position: absolute;
+  
+  }
 `
